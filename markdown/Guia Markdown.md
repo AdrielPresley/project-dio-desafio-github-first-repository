@@ -37,3 +37,19 @@ Nas palavras de Abraham Lincoln:
 > Pardon my French
 
 Dica: ao exibir uma conversa, você pode citar textos automaticamente em um comentário destacando o texto e digitando `r`. É possível citar um comentário inteiro clicando em `...` e em Quote reply (Resposta à citação). Para obter mais informações sobre atalhos de teclado, consulte "Atalhos de teclado".
+
+# Citar código
+
+Você pode chamar código ou um comando em uma frase com aspas simples. O texto entre aspas simples não será formatado. Você também pode pressionar o comando `ou Ctrl + e` o atalho do teclado para inserir as aspas simples para um bloco de código dentro de uma linha de Markdown.
+```
+Use `'git status'` para listar todos os arquivos novos ou modificados que ainda não receberam commit.
+```
+Para formatar código ou texto no próprio bloco distinto, use aspas triplas.
+
+Alguns comandos Git básicos são:
+```
+git status
+git add
+git commit
+```
+Para obter mais informações, consulte "Criar e destacar blocos de código".

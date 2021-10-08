@@ -71,3 +71,13 @@ Bem, nós iremos repassar esses comandos em um momento. Neste ponto, você tem u
 
 # git clone
 
+## Clonando um Repositório Existente
+
+Você clona um repositório com *git clone [url]*. Por exemplo, caso você queria clonar a biblioteca Git do Ruby chamada Grit, você pode fazê-lo da seguinte forma:
+
+`git clone git://github.com/schacon/grit.git`
+
+Se você entrar no novo diretório grit, você verá todos os arquivos do projeto nele, pronto para serem editados ou utilizados. Caso você queira clonar o repositório em um diretório diferente de grit, é possível especificar esse diretório utilizando a opção abaixo:
+
+`git clone git://github.com/schacon/grit.git mygrit`
+Este comando faz exatamente a mesma coisa que o anterior, mas o diretório alvo será chamado *mygrit*.

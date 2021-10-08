@@ -64,11 +64,9 @@ Este site foi construído usando [GitHub Pages](https://pages.github.com/).
 
 Dica: o GitHub cria links automaticamente quando URLs válidos são escritos em um comentário. Para obter mais informações, consulte "Referências e URLs vinculados automaticamente".
 
-# Linnks relativos
+# Links relativos
 
-É possível definir links relativos e caminhos de imagens em seus arquivos representados para ajudar os leitores a acessar outros arquivos no repositório.
-
-Um link relativo é um link que é relativo ao arquivo atual. Por exemplo, se você tiver um arquivo README na raiz do seu repositório e tiver outro arquivo em `docs/CONTRIBUTING.md`, o link relativo para `CONTRIBUTING.md` no seu README pode se parecer com isso:
+É possível definir links relativos e caminhos de imagens em seus arquivos representados para ajudar os leitores a acessar outros arquivos no repositório. Um link relativo é um link que é relativo ao arquivo atual. Por exemplo, se você tiver um arquivo README na raiz do seu repositório e tiver outro arquivo em `docs/CONTRIBUTING.md`, o link relativo para `CONTRIBUTING.md` no seu README pode se parecer com isso:
 
 `[Diretrizes de contribuição para este projeto](docs/CONTRIBUTING.md)`
 
@@ -77,3 +75,11 @@ GitHub transformará automaticamente o seu link relativo ou caminho da imagem ba
 Os links relativos são mais fáceis para usuários que clonam o seu repositório. Os links absolutos podem não funcionar em clones do seu repositório - recomendamos usar links relativos para referir-se a outros arquivos no seu repositório.
 
 # Imagens
+
+Você pode exibir uma imagem adicionando `!` e por o texto alternativo em `[]`. Em seguida, coloque o link da imagem entre parênteses `()`.
+
+![Isso é uma imagem](https://myoctocat.com/assets/images/base-octocat.svg)
+
+GitHub é compatível com a incorporação de imagens nos seus problemas, pull requests, discussões, comentários e arquivos `.md`. Você pode exibir uma imagem do seu repositório, adicionar um link para uma imagem on-line ou fazer o upload de uma imagem. Para obter mais informações, consulte *Fazer o upload de ativos"*.
+
+Dica: quando você quiser exibir uma imagem que está no seu repositório, você deverá usar links relativos em vez de links absolutos.

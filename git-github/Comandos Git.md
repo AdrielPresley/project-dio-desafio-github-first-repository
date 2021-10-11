@@ -87,10 +87,34 @@ Bem, nós iremos repassar esses comandos em um momento. Neste ponto, você tem u
 
 Você clona um repositório com *git clone [url]*. Por exemplo, caso você queria clonar a biblioteca Git do Ruby chamada Grit, você pode fazê-lo da seguinte forma:
 
-`git clone git://github.com/schacon/grit.git`
+* `git clone git://github.com/schacon/grit.git`
 
 Se você entrar no novo diretório grit, você verá todos os arquivos do projeto nele, pronto para serem editados ou utilizados. Caso você queira clonar o repositório em um diretório diferente de grit, é possível especificar esse diretório utilizando a opção abaixo:
 
-`git clone git://github.com/schacon/grit.git mygrit`
+* `git clone git://github.com/schacon/grit.git mygrit`
 Este comando faz exatamente a mesma coisa que o anterior, mas o diretório alvo será chamado *mygrit*.
+
+# Básico
+
+## Gravando Alterações:
+
+* `git add`
+
+Quando um repositório é inicialmente clonado, todos os seus arquivos estarão monitorados e inalterados porque você simplesmente os obteve e ainda não os editou. Conforme você edita esses arquivos, o Git passa a vê-los como modificados, porque você os alterou desde seu último commit. Você seleciona esses arquivos modificados e então faz o commit de todas as alterações selecionadas e o ciclo se repete.
+
+## Monitorando Novos Arquivos:
+
+Para passar a monitorar um novo arquivo, use o comando *git add*. Para monitorar o arquivo *README*, você pode rodar isso:
+
+* `git add README`
+
+Se você rodar o comando git status, você pode ver que o seu arquivo README agora está sendo monitorado. Os arquivos monitorados serão os que faram parte do commit.
+
+## Verificando o Status:
+
+A principal ferramenta utilizada para determinar quais arquivos estão em quais estados é o comando:
+
+* `git status`
+
+
 

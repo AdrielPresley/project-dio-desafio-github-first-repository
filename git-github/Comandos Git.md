@@ -47,6 +47,18 @@ Bem, nós iremos repassar esses comandos em um momento. Neste ponto, você tem u
 
 # git help
 
+## Obter Ajuda:
+
+Se você precisar de ajuda ao usar Git, existem três maneiras de obter a ajuda para qualquer um dos comandos Git:
+
+`git help {comando}`
+
+`git {comando} --help`
+
+`man git- {comando}`
+
+# Criando o projeto
+
 ## Repositório Git:
 
 Você pode obter um projeto Git utilizando duas formas principais. A primeira faz uso de um projeto ou diretório existente e o importa para o Git. A segunda clona um repositório Git existente a partir de outro servidor.
@@ -81,3 +93,4 @@ Se você entrar no novo diretório grit, você verá todos os arquivos do projet
 
 `git clone git://github.com/schacon/grit.git mygrit`
 Este comando faz exatamente a mesma coisa que o anterior, mas o diretório alvo será chamado *mygrit*.
+

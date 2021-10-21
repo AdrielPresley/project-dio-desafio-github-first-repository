@@ -116,5 +116,26 @@ A principal ferramenta utilizada para determinar quais arquivos estão em quais 
 
 * `git status`
 
+O comando lhe mostra em qual branch você se encontra. Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo README. Caso o arquivo não exista e você execute git status, você verá o arquivo não monitorado dessa forma:
 
+* `# On branch master`
+* `# Untracked files:`
+* `# (use "git add {file}..." to include in what will be committed)`
+* `#`
+* `# README`
+* `nothing added to commit but untracked files present (use "git add" to track)`
 
+Você pode ver que o seu novo arquivo README não está sendo monitorado, pois está listado sob o cabeçalho "Untracked files" na saída do comando status. Não monitorado significa basicamente que o Git está vendo um arquivo que não existia na última captura (commit); o Git não vai incluí-lo nas suas capturas de commit até que você o diga explicitamente que assim o faça. Ele faz isso para que você não inclua acidentalmente arquivos binários gerados, ou outros arquivos que você não têm a intenção de incluir. Digamos, que você queira incluir o arquivo README, portanto vamos começar a monitorar este arquivo.
+
+# git diff
+
+## Verficando Mundanças:
+
+Se o comando git status for muito vago — você quer saber exatamente o que você alterou, não apenas quais arquivos foram alterados — você pode utilizar o comando.
+
+* `git diff`
+
+Apesar do comando git status responder essas duas perguntas de maneira geral, o git diff mostra as linhas exatas que foram adicionadas e removidas — o patch, por assim dizer.
+Se você quer ver o que selecionou que irá no seu próximo commit, pode utilizar:
+
+* `git diff --cached`

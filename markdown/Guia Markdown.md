@@ -83,3 +83,54 @@ Você pode exibir uma imagem adicionando `!` e por o texto alternativo em `[]`. 
 GitHub é compatível com a incorporação de imagens nos seus problemas, pull requests, discussões, comentários e arquivos `.md`. Você pode exibir uma imagem do seu repositório, adicionar um link para uma imagem on-line ou fazer o upload de uma imagem. Para obter mais informações, consulte *Fazer o upload de ativos"*.
 
 Dica: quando você quiser exibir uma imagem que está no seu repositório, você deverá usar links relativos em vez de links absolutos.
+
+Aqui estão alguns exemplos para usar links relativos para exibir uma imagem.
+
+## Contexto & Link relativo
+Em um arquivo .md no mesmo branch
+* `/assets/images/electrocat.png`
+
+Em um arquivo .md em outro branch
+* `/../main/assets/images/electrocat.png`
+
+Em problemas, pull requests e comentários do repositório
+* `../blob/main/assets/images/electrocat.png`
+
+Em um arquivo .md em outro repositório	
+* `/../../../../github/docs/blob/main/assets/images/electrocat.png`
+
+Em problemas, pull requests e comentários de outro repositório	
+* `../../../github/docs/blob/main/assets/images/electrocat.png?raw=true`
+
+*Observação: Os dois últimos links relativos na tabela acima funcionarão para imagens em um repositório privado somente se o visualizador tiver pelo menos acesso de leitura ao repositório privado que contém essas imagens.*
+
+# Listas
+
+Você pode criar uma lista não ordenada precedendo uma ou mais linhas de texto com `-` ou `*`.
+
+* `- George Washington`
+* `- John Adams`
+* `- Thomas Jefferson`
+
+Para ordenar a lista, coloque um número na frente de cada linha.
+
+* `1. James Madison`
+* `2. James Monroe`
+* `3. John Quincy Adams`
+
+# Listas aninhadas
+
+Você pode criar uma lista aninhada recuando um ou mais itens da lista abaixo de outro item.
+
+Para criar uma lista aninhada usando o editor web do GitHub ou um editor de texto que usa uma fonte monoespaçada, como o *Atom*, você pode alinhar sua lista visualmente. Digite caracteres de espaço na fonte do item da lista aninhada, até que o caractere de marcador da lista (`-` ou `*`) fique diretamente abaixo do primeiro caractere do texto no item acima dele.
+
+* `1. Primeiro item da lista`
+  * `- Primeiro item de lista aninhado`
+     * `- Segundo item de lista aninhada`
+
+Para criar uma lista aninhada no editor de comentários do GitHub, que não usa uma fonte monoespaçada, você pode observar o item da lista logo acima da lista aninhada e contar o número de caracteres que aparecem antes do conteúdo do item. Em seguida, digite esse número de caracteres de espaço na fonte do item da linha aninhada.
+
+Neste exemplo, você pode adicionar um item de lista aninhada abaixo do item de lista `100. Primeiro item da lista` recuando o item da lista aninhada com no mínimo cinco espaços, uma vez que há cinco caracteres (`100.`) antes de `Primeiro item da lista`.
+
+* `100. Primeiro item da lista`
+    * `- Primeiro item da lista aninhada`

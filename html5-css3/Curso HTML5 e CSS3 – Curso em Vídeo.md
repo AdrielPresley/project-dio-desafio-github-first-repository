@@ -12,6 +12,43 @@ HTML = Conteúdo = textos, imagens, vídeos, tabelas
 
 CSS = Design = cores, sombras, tamanhos, posicionamentos
 
+# Estrutura Básica, DOCTYPE e Charsets
+
+* `<!DOCTYPE html>`
+* `<html lang="pt-br">`
+* `<head>`
+* `      <meta charset="UTF-8">`
+* `           <title></title>`
+* `</head>`
+* `<body>`
+* `Corpo do site`
+* `</body>`
+* `</html>`
+
+## O Doctype
+
+O Doctype não é uma tag do HTML, mas uma instrução para que o navegador tenha informações sobre qual versão de código a marcação foi escrita. Ele sempre vem sempre a primeira linha de código do documento antes da tag HTML.
+
+* `<!DOCTYPE html>`
+
+## O elemento HTML
+
+É como se fosse uma árvore com seus galhos, o elemento principal dessa grande árvore é sempre a tag HTML.
+
+* `<html lang="pt-br">`
+
+O atributo LANG é necessário para que os user-agents saibam qual a linguagem principal do documento. Metadados são informações sobre a página e o conteúdo ali publicado.
+
+## HEAD
+
+A Tag HEAD é onde fica toda a parte inteligente da página. Metadados são informações sobre a página e o conteúdo ali publicado.
+
+## Metatag Charset
+
+Essa metatag e reponsável por linguagens, onde foi criada uma tabela que suprisse as necessidades impostas pelas linguagens do mundo todo, essa tabela chama-se Unicode. A tabela Unicode suporta em torno de 1 milhão de caractéres.
+
+* `<meta charset="utf-8">`
+
 # Identificando URL’s 
 
 Ex 1:
